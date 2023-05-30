@@ -5,6 +5,8 @@ describe("Shadow DOM Test", () => {
     cy.get("guid-generator").shadow().find("#buttonCopy").click();
     const copied = cy.get("guid-generator").shadow().find("#editField").invoke("val");
     //window() lets access to the page that we are testing
+    //Cypress will wait for Promise to resolve,
+    //and use the resolved value as the new subject to continue the chain of commands
     cy.window()
       .then((win) => win.navigator.clipboard.readText())
       .then((text) => {
