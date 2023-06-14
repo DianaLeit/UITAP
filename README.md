@@ -17,7 +17,6 @@ The test identifies the primary (blue) button using btn-primary class and clicks
 [**click.cy.js**](cypress/e2e/click.cy.js)<br>
 The event-based click does not work.<br>
 Test emulates physical mouse click.<br>
-_Didn't understand this task, should I also click on the green button or not? Otherwise, it's too simple._
 
 [**clientSideDelay.cy.js**](cypress/e2e/clientSideDelay.cy.js)<br>
 The element appears on a page after JS processing on the client side.<br>
@@ -34,7 +33,7 @@ The test should get a value of CPU load for the Chrome process and compare it wi
 
 [**hiddenLayers.cy.js**](cypress/e2e/hiddenLayers.cy.js)<br>
 The button is present in the DOM tree but overlapped with another element.<br>
-Test duplicates the button click, the green button doesn`t hit twice.
+Test duplicates the button click, the green button doesn't hit twice.
 
 [**loadDelay.cy.js**](cypress/e2e/loadDelay.cy.js)<br>
 The page has a load delay.<br>
@@ -46,7 +45,7 @@ Test clicks on active link 2 times and checks the number of clicks on label.
 
 [**nonBreakingSpace.cy.js**](cypress/e2e/nonBreakingSpace.cy.js)<br>
 Non-breaking space has no visual difference on the screen. It may lead to confusion when building XPath<br>
-But there`s no such problem in Cypress.
+But there's no such problem in Cypress.
 Test searches for an element by its text with non-breaking space.
 
 [**overlappedElement.cy.js**](cypress/e2e/overlappedElement.cy.js)<br>
@@ -77,7 +76,6 @@ Test types text in input and checks that it changes the button name.
 
 [**verifyText.cy.js**](cypress/e2e/verifyText.cy.js)<br>
 Test finds the label element with Welcome text.
-_Probably I didn't understand it right._
 
 [**visibility.cy.js**](cypress/e2e/visibility.cy.js)<br>
 Buttons on the page are removed | have zero height or width | covered by another element |
