@@ -16,7 +16,7 @@ jobs:
         with:
           node-version: 18
       - run: npm ci
-      - run: eslint .
+      - run: npm run eslint
 
   markdownlint-cli:
     runs-on: ubuntu-latest
