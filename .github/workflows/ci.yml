@@ -7,6 +7,14 @@ on:
   pull_request:
 
 jobs:
+  # https://github.com/marketplace/actions/run-eslint
+  eslint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: yarn
+      - run: eslint . --ext .js,.jsx,.ts,.tsx
+
   markdownlint-cli:
     runs-on: ubuntu-latest
     steps:
