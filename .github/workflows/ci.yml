@@ -12,8 +12,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run: yarn
-      - run: eslint . --ext .js,.jsx,.ts,.tsx
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 18
+      - run: npm ci
+      - run: eslint .
 
   markdownlint-cli:
     runs-on: ubuntu-latest
