@@ -1,7 +1,7 @@
 {
   "devDependencies": {
     "@babel/plugin-proposal-decorators": "^7.22.15",
-    "cypress": "^13.2.0",
+    "cypress": "^13.4.0",
     "eslint": "^8.49.0",
     "eslint-plugin-cypress": "^2.14.0"
   },
